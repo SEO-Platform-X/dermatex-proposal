@@ -218,6 +218,20 @@ section.alt .tl .when{background:var(--paper2)}
 .mem .does{font-size:15px;color:var(--ink2);margin:0}
 @media (max-width:700px){.team{grid-template-columns:1fr 1fr}}
 @media (max-width:420px){.team{grid-template-columns:1fr}}
+
+.vf{background:#F7F8FA;border-radius:18px;padding:16px;margin:0}
+.vf svg{display:block;width:100%;height:auto}
+.vpair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 22px}
+.vpair h3{margin:0 0 10px}
+@media (max-width:600px){.vpair{grid-template-columns:1fr}}
+.vtri{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0 10px}
+.vtri h3{font-size:16px;margin:10px 0 0}
+@media (max-width:600px){.vtri{grid-template-columns:1fr}.vtri .vf{max-width:320px}}
+.vnote{font-size:15px;color:var(--ink2);margin:8px 0 0}
+.mini{display:block;width:100%;max-width:260px;height:auto;margin:10px 0 6px;color:var(--ink2)}
+.vscroll{overflow-x:auto;margin:24px 0 8px}
+.vscroll .vf{min-width:540px}
+.vsplit{max-width:520px;margin:14px 0 12px}
 @media print{section{padding:36px 0}.roi input{display:none}}
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -288,20 +302,48 @@ section.alt .tl .when{background:var(--paper2)}
     <h2 id="s-shift">Your clients are asking AI now</h2>
     <p class="sub">For twenty years, getting new clients meant Google rankings, Facebook and Instagram, and paid ads. All of those still exist, but the first question is moving to AI, and the paid channels cost more every year.</p>
     <div class="shift">
-      <div><span class="num">6% → 45%</span><p>Share of US consumers who used AI to find a local business, in a single year.<cite>BrightLocal Local Consumer Review Survey, March 2026</cite></p></div>
+      <div><span class="num">6% → 45%</span><svg class="mini" viewBox="0 0 240 46" aria-hidden="true">
+<text x="0" y="13" font-size="12" fill="currentColor" font-family="Hanken Grotesk, sans-serif">2025</text><rect x="44" y="4" width="196" height="11" rx="5.5" fill="currentColor" opacity=".14"/><rect x="44" y="4" width="12" height="11" rx="5.5" fill="#1F4FE0"/>
+<text x="0" y="38" font-size="12" fill="currentColor" font-family="Hanken Grotesk, sans-serif">2026</text><rect x="44" y="29" width="196" height="11" rx="5.5" fill="currentColor" opacity=".14"/><rect x="44" y="29" width="88" height="11" rx="5.5" fill="#1F4FE0"/>
+</svg><p>Share of US consumers who used AI to find a local business, in a single year.<cite>BrightLocal Local Consumer Review Survey, March 2026</cite></p></div>
       <div><span class="num">64%</span><p>Of 30 to 44 year olds use AI for local recommendations, the age group most likely to buy hair replacement.<cite>BrightLocal, 2026</cite></p></div>
       <div><span class="num">900M</span><p>People use ChatGPT every week. Google’s Gemini app has 900 million monthly users.<cite>OpenAI via WiserNotify, Feb and May 2026</cite></p></div>
-      <div><span class="num">15% → 8%</span><p>Clicks on regular Google results when an AI summary appears at the top. Only 1% click the sources inside it.<cite>Pew Research Center</cite></p></div>
+      <div><span class="num">15% → 8%</span><svg class="mini" viewBox="0 0 240 46" aria-hidden="true">
+<text x="0" y="13" font-size="12" fill="currentColor" font-family="Hanken Grotesk, sans-serif">No AI summary</text><rect x="96" y="4" width="144" height="11" rx="5.5" fill="currentColor" opacity=".14"/><rect x="96" y="4" width="22" height="11" rx="5.5" fill="#1F4FE0"/>
+<text x="0" y="38" font-size="12" fill="currentColor" font-family="Hanken Grotesk, sans-serif">With summary</text><rect x="96" y="29" width="144" height="11" rx="5.5" fill="currentColor" opacity=".14"/><rect x="96" y="29" width="12" height="11" rx="5.5" fill="#1F4FE0"/>
+</svg><p>Clicks on regular Google results when an AI summary appears at the top. Only 1% click the sources inside it.<cite>Pew Research Center</cite></p></div>
       <div><span class="num">+12%</span><p>Meta’s average price per ad, year over year. Facebook and Instagram ads keep getting more expensive for the same attention.<cite>Meta Q1 2026 earnings</cite></p></div>
       <div><span class="num">1.2%</span><p>Of local businesses get recommended by ChatGPT today. The spots are open, and early movers take them.<cite>SOCi Local Visibility Index, 2026</cite></p></div>
     </div>
 
     <h2 style="font-size:clamp(28px,4.4vw,36px)">So what is AEO?</h2>
     <p class="plain">AEO stands for answer engine optimization. It’s SEO for AI. SEO gets you onto Google’s list of links. AEO gets your name into the answer itself.</p>
-    <div class="vs">
-      <div><h3>Old way: SEO and ads</h3><ul><li>Someone searches and gets 10 blue links plus ads</li><li>They click around and compare websites</li><li>You pay for every click, every month</li><li>Being #6 still gets you a look</li></ul></div>
-      <div><h3>New way: AI answers</h3><ul><li>Someone asks, “Who’s best for non-surgical hair replacement near me?”</li><li>AI replies with two or three names and why</li><li>There is no page two</li><li>If you aren’t named, you don’t exist to that client</li></ul></div>
-    </div>
+    <div class="vpair"><div><h3>Old way: SEO and ads</h3><figure class="vf"><svg viewBox="0 0 320 340" role="img" aria-label="Old way: a search returns ads and ten blue links">
+<rect x="10" y="10" width="300" height="300" rx="20" fill="#fff" stroke="#0B1A2E" stroke-width="2"/>
+<rect x="26" y="28" width="268" height="34" rx="17" fill="#EEF1F6"/>
+<text x="44" y="50" font-size="13" fill="#3D4A5C" font-family="Hanken Grotesk, sans-serif">hair replacement near me</text>
+<circle cx="268" cy="44" r="6" fill="none" stroke="#7F8EA6" stroke-width="2"/><line x1="272" y1="48" x2="277" y2="53" stroke="#7F8EA6" stroke-width="2" stroke-linecap="round"/>
+<rect x="28" y="76" width="24" height="16" rx="4" fill="#0B1A2E"/><text x="40" y="88" text-anchor="middle" font-size="10" font-weight="700" fill="#fff" font-family="Bricolage Grotesque, sans-serif">Ad</text><rect x="60" y="80" width="150" height="8" rx="4" fill="#1F4FE0"/><rect x="28" y="98" width="230" height="5" rx="2.5" fill="#D9DEE7"/><rect x="28" y="108" width="24" height="16" rx="4" fill="#0B1A2E"/><text x="40" y="120" text-anchor="middle" font-size="10" font-weight="700" fill="#fff" font-family="Bricolage Grotesque, sans-serif">Ad</text><rect x="60" y="112" width="138" height="8" rx="4" fill="#1F4FE0"/><rect x="28" y="130" width="230" height="5" rx="2.5" fill="#D9DEE7"/><rect x="28" y="144" width="136" height="8" rx="4" fill="#1F4FE0" opacity=".85"/><rect x="28" y="162" width="240" height="5" rx="2.5" fill="#D9DEE7"/><rect x="28" y="176" width="180" height="8" rx="4" fill="#1F4FE0" opacity=".85"/><rect x="28" y="194" width="210" height="5" rx="2.5" fill="#D9DEE7"/><rect x="28" y="208" width="158" height="8" rx="4" fill="#1F4FE0" opacity=".85"/><rect x="28" y="226" width="240" height="5" rx="2.5" fill="#D9DEE7"/><rect x="28" y="240" width="136" height="8" rx="4" fill="#1F4FE0" opacity=".85"/><rect x="28" y="258" width="210" height="5" rx="2.5" fill="#D9DEE7"/><rect x="28" y="272" width="180" height="8" rx="4" fill="#1F4FE0" opacity=".85"/><rect x="28" y="290" width="240" height="5" rx="2.5" fill="#D9DEE7"/>
+<text x="160" y="333" text-anchor="middle" font-size="14" font-weight="700" fill="#0B1A2E" font-family="Bricolage Grotesque, sans-serif">Ads and 10 links. You pay per click.</text>
+</svg></figure></div><div><h3>New way: AI answers</h3><figure class="vf"><svg viewBox="0 0 320 340" role="img" aria-label="New way: AI answers with two or three names, Dermatex first">
+<rect x="10" y="10" width="300" height="300" rx="20" fill="#fff" stroke="#0B1A2E" stroke-width="2"/>
+<rect x="104" y="28" width="190" height="48" rx="14" fill="#1F4FE0"/>
+<text x="118" y="48" font-size="12.5" fill="#fff" font-family="Hanken Grotesk, sans-serif">Who’s best for hair</text>
+<text x="118" y="66" font-size="12.5" fill="#fff" font-family="Hanken Grotesk, sans-serif">replacement near me?</text>
+<rect x="26" y="90" width="250" height="200" rx="14" fill="#F4F1EA"/>
+<rect x="40" y="102" width="52" height="18" rx="5" fill="#1F4FE0"/><text x="66" y="115" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff" font-family="Bricolage Grotesque, sans-serif">AI says</text>
+<text x="100" y="116" font-size="12" fill="#3D4A5C" font-family="Hanken Grotesk, sans-serif">Top picks near you:</text>
+<rect x="40" y="130" width="222" height="40" rx="10" fill="#fff" stroke="#1F4FE0" stroke-width="2"/>
+<circle cx="61" cy="150" r="11" fill="#1F4FE0"/><text x="61" y="154" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="Bricolage Grotesque, sans-serif">1</text>
+<text x="80" y="148" font-size="14" font-weight="700" fill="#0B1A2E" font-family="Bricolage Grotesque, sans-serif">Dermatex</text>
+<text x="80" y="162" font-size="11" fill="#3D4A5C" font-family="Hanken Grotesk, sans-serif">Laguna Hills</text>
+<path d="M232 150 l5 5 l10 -11" fill="none" stroke="#1F4FE0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="180" width="222" height="40" rx="10" fill="#fff" stroke="#D9DEE7" stroke-width="1.5"/>
+<circle cx="61" cy="200" r="11" fill="#9AA8BD"/><text x="61" y="204" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="Bricolage Grotesque, sans-serif">2</text>
+<rect x="80" y="191" width="86" height="8" rx="4" fill="#D9DEE7"/><rect x="80" y="205" width="70" height="5" rx="2.5" fill="#D9DEE7"/><rect x="40" y="230" width="222" height="40" rx="10" fill="#fff" stroke="#D9DEE7" stroke-width="1.5"/>
+<circle cx="61" cy="250" r="11" fill="#9AA8BD"/><text x="61" y="254" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="Bricolage Grotesque, sans-serif">3</text>
+<rect x="80" y="241" width="74" height="8" rx="4" fill="#D9DEE7"/><rect x="80" y="255" width="70" height="5" rx="2.5" fill="#D9DEE7"/>
+<text x="160" y="333" text-anchor="middle" font-size="14" font-weight="700" fill="#0B1A2E" font-family="Bricolage Grotesque, sans-serif">2 or 3 names. No page two.</text>
+</svg></figure></div></div>
     <p class="sub" style="margin-bottom:0">Google still matters: most people double-check an AI pick on Google or Maps before they call. That’s why we do both, SEO and AEO, as one job.</p>
   </div>
 </section>
@@ -375,7 +417,11 @@ section.alt .tl .when{background:var(--paper2)}
     <div class="find">
       <h3>So does your name, phone and home base</h3>
       <div class="receipt"><b>What AI has to reconcile</b>“Hair Replacement” in the page title, “Hair Restoration Orange County CA” as the site name, “Laguna Hills” in the footer. Two different Facebook pages linked. Booking on a separate domain. The San Diego button sends people to a different brand, Fidenza Hair. An older press release lists a different phone number.</div>
-      <p class="why">AI connects facts about a business by matching name, address and phone. <strong>Every variation splits Dermatex into weaker, partial versions of itself.</strong></p>
+      <p class="why">AI connects facts about a business by matching name, address and phone. <strong>Every variation splits Dermatex into weaker, partial versions of itself.</strong></p><figure class="vf vsplit"><svg viewBox="0 0 360 330" role="img" aria-label="AI finds eight different versions of the Dermatex name, links and phone">
+<line x1="180" y1="90" x2="90" y2="128" stroke="#D63A1C" stroke-width="1.3" stroke-dasharray="4 4" opacity=".7"/><line x1="180" y1="90" x2="90" y2="170" stroke="#D63A1C" stroke-width="1.3" stroke-dasharray="4 4" opacity=".7"/><line x1="180" y1="90" x2="90" y2="212" stroke="#D63A1C" stroke-width="1.3" stroke-dasharray="4 4" opacity=".7"/><line x1="180" y1="90" x2="90" y2="254" stroke="#D63A1C" stroke-width="1.3" stroke-dasharray="4 4" opacity=".7"/><line x1="180" y1="90" x2="270" y2="128" stroke="#D63A1C" stroke-width="1.3" stroke-dasharray="4 4" opacity=".7"/><line x1="180" y1="90" x2="270" y2="170" stroke="#D63A1C" stroke-width="1.3" stroke-dasharray="4 4" opacity=".7"/><line x1="180" y1="90" x2="270" y2="212" stroke="#D63A1C" stroke-width="1.3" stroke-dasharray="4 4" opacity=".7"/><line x1="180" y1="90" x2="270" y2="254" stroke="#D63A1C" stroke-width="1.3" stroke-dasharray="4 4" opacity=".7"/><rect x="10" y="128" width="160" height="30" rx="8" fill="#fff" stroke="#D63A1C" stroke-width="1.5"/><text x="90" y="147.5" text-anchor="middle" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">Hair Replacement</text><rect x="10" y="170" width="160" height="30" rx="8" fill="#fff" stroke="#D63A1C" stroke-width="1.5"/><text x="90" y="189.5" text-anchor="middle" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">Hair Restoration OC CA</text><rect x="10" y="212" width="160" height="30" rx="8" fill="#fff" stroke="#D63A1C" stroke-width="1.5"/><text x="90" y="231.5" text-anchor="middle" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">Laguna Hills</text><rect x="10" y="254" width="160" height="30" rx="8" fill="#fff" stroke="#D63A1C" stroke-width="1.5"/><text x="90" y="273.5" text-anchor="middle" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">Fidenza Hair (San Diego)</text><rect x="190" y="128" width="160" height="30" rx="8" fill="#fff" stroke="#D63A1C" stroke-width="1.5"/><text x="270" y="147.5" text-anchor="middle" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">facebook.com/DermatexHair</text><rect x="190" y="170" width="160" height="30" rx="8" fill="#fff" stroke="#D63A1C" stroke-width="1.5"/><text x="270" y="189.5" text-anchor="middle" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">facebook.com/dermatexoc</text><rect x="190" y="212" width="160" height="30" rx="8" fill="#fff" stroke="#D63A1C" stroke-width="1.5"/><text x="270" y="231.5" text-anchor="middle" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">dermatexhairappts.com</text><rect x="190" y="254" width="160" height="30" rx="8" fill="#fff" stroke="#D63A1C" stroke-width="1.5"/><text x="270" y="273.5" text-anchor="middle" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">(866) 490-7755</text>
+<circle cx="180" cy="56" r="36" fill="#1F4FE0"/><text x="180" y="62" text-anchor="middle" font-size="18" font-weight="800" fill="#fff" font-family="Bricolage Grotesque, sans-serif">AI</text>
+<text x="180" y="316" text-anchor="middle" font-size="15" font-weight="700" fill="#0B1A2E" font-family="Bricolage Grotesque, sans-serif">Which one is the real Dermatex?</text>
+</svg></figure>
     </div>
 
     <div class="find">
@@ -493,7 +539,8 @@ section.alt .tl .when{background:var(--paper2)}
 <section aria-labelledby="s-method">
   <div class="wrap">
     <h2 id="s-method">How we get you into AI answers</h2>
-    <p class="sub">AI assistants answer local questions in two steps. First they look things up. Then they write an answer from what they found. We work on both steps.</p>
+    <p class="sub">AI assistants answer local questions in two steps. First they look things up. Then they write an answer from what they found. We work on both steps.</p><div class="vtri"><div><figure class="vf"><svg viewBox="0 0 200 160" role="img" aria-label="A client asks AI a question"><rect x="20" y="38" width="164" height="60" rx="14" fill="#1F4FE0"/><text x="36" y="63" font-size="13" fill="#fff" font-family="Hanken Grotesk, sans-serif">Hair replacement</text><text x="36" y="82" font-size="13" fill="#fff" font-family="Hanken Grotesk, sans-serif">near Laguna Hills?</text><path d="M160 98 l8 14 l2 -14z" fill="#1F4FE0"/></svg></figure><h3>1. A client asks</h3></div><div><figure class="vf"><svg viewBox="0 0 200 160" role="img" aria-label="AI looks up sources: Google profile, directories, reviews, news sites and your website"><rect x="16" y="12" width="124" height="22" rx="6" fill="#fff" stroke="#D9DEE7" stroke-width="1.5"/><circle cx="28" cy="23" r="4" fill="#1F4FE0"/><text x="38" y="27" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">Google profile</text><rect x="16" y="40" width="124" height="22" rx="6" fill="#fff" stroke="#D9DEE7" stroke-width="1.5"/><circle cx="28" cy="51" r="4" fill="#1F4FE0"/><text x="38" y="55" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">Directories</text><rect x="16" y="68" width="124" height="22" rx="6" fill="#fff" stroke="#D9DEE7" stroke-width="1.5"/><circle cx="28" cy="79" r="4" fill="#1F4FE0"/><text x="38" y="83" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">Reviews</text><rect x="16" y="96" width="124" height="22" rx="6" fill="#fff" stroke="#D9DEE7" stroke-width="1.5"/><circle cx="28" cy="107" r="4" fill="#1F4FE0"/><text x="38" y="111" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">News sites</text><rect x="16" y="124" width="124" height="22" rx="6" fill="#fff" stroke="#D9DEE7" stroke-width="1.5"/><circle cx="28" cy="135" r="4" fill="#1F4FE0"/><text x="38" y="139" font-size="11.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">Your website</text><circle cx="164" cy="74" r="20" fill="none" stroke="#1F4FE0" stroke-width="4"/><line x1="178" y1="88" x2="192" y2="102" stroke="#1F4FE0" stroke-width="5" stroke-linecap="round"/></svg></figure><h3>2. AI looks it up</h3></div><div><figure class="vf"><svg viewBox="0 0 200 160" role="img" aria-label="AI writes an answer recommending Dermatex"><rect x="14" y="14" width="172" height="132" rx="14" fill="#F4F1EA"/><rect x="28" y="28" width="52" height="18" rx="5" fill="#1F4FE0"/><text x="54" y="41" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff" font-family="Bricolage Grotesque, sans-serif">AI says</text><text x="28" y="70" font-size="12.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">Try <tspan font-weight="700">Dermatex</tspan> in</text><text x="28" y="88" font-size="12.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">Laguna Hills. Custom</text><text x="28" y="106" font-size="12.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">systems for men</text><text x="28" y="124" font-size="12.5" fill="#0B1A2E" font-family="Hanken Grotesk, sans-serif">and women.</text></svg></figure><h3>3. AI writes the answer</h3></div></div>
+<p class="vnote">RAG is step 2: we make sure every source AI checks finds you. Semantic SEO is step 3: we make sure AI understands what you do well enough to say it.</p>
     <div class="twocol">
       <div class="pane">
         <div class="tag">RAG</div>
@@ -528,7 +575,16 @@ section.alt .tl .when{background:var(--paper2)}
 <section class="alt" aria-labelledby="s-time">
   <div class="wrap">
     <h2 id="s-time">Timeline</h2>
-    <p class="sub">AI recommendations build on each other. Here’s what to expect and when.</p>
+    <p class="sub">AI recommendations build on each other. Here’s what to expect and when.</p><div class="vscroll"><figure class="vf"><svg viewBox="0 0 600 250" role="img" aria-label="AI visibility rising over 12 months, with the 6-month minimum shaded">
+<rect x="50.0" y="26" width="265.0" height="178" fill="#DCE5FF" opacity=".6"/>
+<text x="60.0" y="44" font-size="12.5" font-weight="700" fill="#1F4FE0" font-family="Bricolage Grotesque, sans-serif">6-month minimum</text>
+<text x="325.0" y="44" font-size="12.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">Then month to month</text>
+<line x1="50.0" y1="204" x2="580.0" y2="204" stroke="#D9DEE7" stroke-width="1.5"/>
+<path d="M50.0 196 L94.2 194 L138.3 189 L182.5 177 L226.7 152 L270.8 131 L315.0 113 L359.2 99 L403.3 86 L447.5 76 L491.7 66 L535.8 57 L580.0 48" fill="none" stroke="#1F4FE0" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="94.2" cy="194" r="6.5" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text x="94.2" y="178" text-anchor="middle" font-size="13" font-weight="700" fill="#0B1A2E" font-family="Bricolage Grotesque, sans-serif">Site live</text><circle cx="226.7" cy="152" r="6.5" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text x="226.7" y="136" text-anchor="middle" font-size="13" font-weight="700" fill="#0B1A2E" font-family="Bricolage Grotesque, sans-serif">In AI answers</text><circle cx="315.0" cy="113" r="6.5" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text x="315.0" y="97" text-anchor="middle" font-size="13" font-weight="700" fill="#0B1A2E" font-family="Bricolage Grotesque, sans-serif">Traction</text><circle cx="447.5" cy="76" r="6.5" fill="#1F4FE0" stroke="#1F4FE0" stroke-width="3"/><text x="447.5" y="60" text-anchor="middle" font-size="13" font-weight="700" fill="#0B1A2E" font-family="Bricolage Grotesque, sans-serif">ROI</text><text x="50.0" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">Start</text><text x="94.2" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">1</text><text x="138.3" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">2</text><text x="182.5" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">3</text><text x="226.7" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">4</text><text x="270.8" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">5</text><text x="315.0" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">6</text><text x="359.2" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">7</text><text x="403.3" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">8</text><text x="447.5" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">9</text><text x="491.7" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">10</text><text x="535.8" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">11</text><text x="580.0" y="222" text-anchor="middle" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">12</text>
+<text x="580.0" y="244" text-anchor="end" font-size="11.5" fill="#7F8EA6" font-family="Hanken Grotesk, sans-serif">Months</text>
+<text x="580.0" y="30" text-anchor="end" font-size="12.5" font-weight="700" fill="#1F4FE0" font-family="Bricolage Grotesque, sans-serif">AI visibility</text>
+</svg></figure></div>
     <ol class="tl">
       <li><div class="when">Week 1</div><div class="what"><h3>Kickoff and intake</h3><p>We meet in person, send your intake form, and you claim and confirm your Local AI Registry profile. We gather photos, before-and-afters and your process.</p></div></li>
       <li><div class="when">Month 1</div><div class="what"><h3>New website live</h3><p>Rebuilt around what you actually do, with one page per real service. Google Business Profile cleanup and directory submissions start the same month.</p></div></li>
